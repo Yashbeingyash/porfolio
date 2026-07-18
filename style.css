@@ -5,12 +5,21 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(assets/backgroundLaptop.jpg);
+    background-image: url(assets/backgroundIMG.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 2px;
+    background-color: #000000;
+    border: none;
+    width: 98vw;
 }
 
 
@@ -23,6 +32,43 @@ body {
 
 .container{
     display: block;
+}
+
+
+.linav {
+    float: left;
+    text-align: center;
+
+}
+
+.ulnav {
+    list-style-type: none;
+    padding: 0px;
+    margin: -7px;
+    
+}
+ 
+
+
+.linav a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(31, 22, 22);
+    background-color: #e9f6f7;
+    text-align: center;
+    height: 39px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: aliceblue;
+
+}
+
+.linav a:hover {
+    background-color: rgb(224, 165, 165);
+    color: #000000;
 }
 
 #datetoday{
@@ -50,56 +96,43 @@ body {
     
 }
 
-.linav {
-    float: left;
-    text-align: center;
 
-}
-
-.ulnav {
-    list-style-type: none;
-    padding: 0px;
-    margin: -7px;
-    
-}
- 
 .thought-bar {
     display: inline-block;
     width: 100%;
     height: 25px;
-    background-color: rgba(138, 54, 54, 0.623);
+    background-color: rgba(30, 139, 143, 0.623);
     margin-top: 20px;
     text-align: center;
     color: white;
 }
 
-.main-acad-box{
+#daytho{
+    margin:0;
+}
+
+.box-container{
     border-bottom: #000000 solid;
     border-width: 2.5px;
     margin-bottom: 20px;
 }
 
-
-
-.linav a {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(31, 22, 22);
-    background-color: #e9f6f7;
-    text-align: center;
-    height: 39px;
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: 1px;
-    border-right-style: solid;
-    border-right-color: aliceblue;
-
+.flexbox-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(135, 207, 235, 0.582);
 }
 
-.linav a:hover {
-    background-color: rgb(224, 165, 165);
-    color: #000000;
+.flexbox-container>.box {
+    width: 33.33%;
+    margin: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+.acheivement-container{
+    background-color: rgba(240, 248, 255, 0.61);
+    padding: 5px;
 }
 
 .blog-container{
@@ -121,16 +154,61 @@ header{
     align-content: center;
 }
 
-.flexbox-container {
+fieldset{
     display: flex;
     flex-wrap: nowrap;
-    background-color: skyblue;
+    background-color: rgba(240, 248, 255, 0.596);
 }
-.flexbox-container>.box {
-    width: 33.33%;
-    margin: 5px;
-    padding: 5px;
+
+fieldset div{
+    width: 50%;
+    line-height: 2em;
+}
+
+.flexbox-container2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.flexbox-container2 input{
+    width: 50%;
+    border-radius: 5px;
+    border: #000000 solid 1px;
+    transition: transform 0.5s ease;
+}
+
+.flexbox-container2 label{
+    width: 100%;
+}
+
+.btnn{
+    background-color: aliceblue;
+    color: #000000;
+    border-radius: 3px;
+    border: #333 solid 1px;
+    margin: 2.5px;
+
+}
+
+.btnn:hover{
+    background-color: white;
+}
+
+.btnn:active{
+    background-color: rgb(21, 204, 218);
+    transform: scale(0.9);
+}
+
+.flexbox-container2 input:focus{
+    border: none;
     background-color: antiquewhite;
+    outline: 1.5px black dashed;
+}
+
+.flexbox-container2 input:hover{
+    transform: scale(1.05);
 }
 
 .skillset {
@@ -193,14 +271,5 @@ footer div p a{
     justify-content: center;
 }
 
-.inbo {
-    display: inline-block;
-    font-size: large;
-    background-color: aliceblue;
-    color: #000000;
-    border-radius: 10px;
-    width: 100%;
-    
-    text-align: center;
-}
+
 

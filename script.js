@@ -116,3 +116,16 @@ document.getElementById("daytho").innerHTML = thought;}
 
     setInterval(myClock, 1000);
 }
+
+{
+let themeToggle = document.getElementById("theme-toggle");
+let themeCss = document.getElementById("theme-css");
+function toggleTheme() {
+    if (themeCss.getAttribute("href") === "main-theme.css") {
+        themeCss.setAttribute("href", "dark-theme.css");
+    } else {
+        themeCss.setAttribute("href", "main-theme.css");
+    }
+}
+themeToggle.addEventListener("click", toggleTheme);
+}
